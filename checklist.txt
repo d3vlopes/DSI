@@ -2,6 +2,7 @@ Configura a font a ser utilizada ()
   - Baixar a fonte no site https://google-webfonts-helper.herokuapp.com/fonts
   - Colocar as fontes dentro de public/fonts
   - Adiciona a @font-face da font selecionada em src/styles/global.ts
+  - Retirar as fontes do .gitignore
 
 Configurar o arquivo style/theme.ts (x)
 com todos os sizes, cores e tamanhos que o projeto ira utilizar
