@@ -33,7 +33,7 @@ export enum Colors {
   littleBlack = '#263238',
   mediumBlack = '#1F2E35',
   black = '#30444E',
-  darker = '#1F2E35',
+  grey = '#1F2E35',
   white = '#FFFFFF',
 }
 
