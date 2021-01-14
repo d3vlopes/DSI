@@ -1,8 +1,22 @@
+import { Container } from 'components/Container'
+import Menu from 'components/Menu'
+import Footer from 'components/Footer'
+
 import * as S from './styles'
 
-const Base = () => (
+export type BaseTemplateProps = {
+  children: React.ReactNode
+}
+
+const Base = ({ children }: BaseTemplateProps) => (
   <S.Wrapper>
-    <h1>Base</h1>
+    <Menu />
+
+    <S.Content>{children}</S.Content>
+
+    <S.SectionFooter>
+      <Footer />
+    </S.SectionFooter>
   </S.Wrapper>
 )
 
