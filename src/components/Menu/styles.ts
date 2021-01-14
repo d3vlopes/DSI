@@ -1,18 +1,25 @@
 import styled, { css } from 'styled-components'
 import media from 'styled-media-query'
 
+import { Container } from 'components/Container'
+
 export const Wrapper = styled.menu`
   ${({ theme }) => css`
-    display: flex;
-    align-items: center;
     padding: ${theme.spacings.medium} 0;
     z-index: ${theme.layers.menu};
     box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
-    overflow-x: hidden;
+    overflow: hidden;
+
+    ${Container} {
+      display: flex;
+      align-items: center;
+    }
 
     ${media.lessThan('medium')`
-      display: flex;
-      justify-content: space-between;
+      ${Container} {
+        display: flex;
+        justify-content: space-between;
+      }
     `}
   `}
 `
@@ -40,7 +47,7 @@ export const MenuGroup = styled.div`
     `}
 
     > div {
-      margin: -1rem 0 0 ${theme.spacings.medium};
+      margin-left: ${theme.spacings.medium};
     }
   `}
 `
