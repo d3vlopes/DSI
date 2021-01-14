@@ -49,7 +49,7 @@ const GlobalStyles = createGlobalStyle`
 
     body {
       font-family: ${theme.font.family.main};
-      font-size: ${theme.font.sizes.medium};
+      font-size: ${theme.font.sizes.xxsmall};
     }
   `}
 `
