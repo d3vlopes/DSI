@@ -1,4 +1,3 @@
-import { Container } from 'components/Container'
 import Menu from 'components/Menu'
 import Footer from 'components/Footer'
 
