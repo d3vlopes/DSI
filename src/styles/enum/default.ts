@@ -35,6 +35,9 @@ export enum Colors {
   black = '#30444E',
   grey = '#1F2E35',
   white = '#FFFFFF',
+  whiteF2 = '#F2F2F2',
+  whiteF6 = '#F6F6F6',
+  whiteF9 = '#F9F9F9',
 }
 
 export enum Spacings {
