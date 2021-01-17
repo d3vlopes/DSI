@@ -1,10 +1,13 @@
 import * as S from './styles'
 
+export type HeadingColor = 'grey' | 'littleBlack' | 'white'
+export type HeadingWavyColor = 'primary' | 'littleBlack'
+
 export type HeadingProps = {
   children: React.ReactNode
-  color?: 'grey' | 'littleBlack' | 'white'
+  color?: HeadingColor
   wavy?: boolean
-  wavyColor?: 'primary' | 'littleBlack'
+  wavyColor?: HeadingWavyColor
 }
 
 const Heading = ({
