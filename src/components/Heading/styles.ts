@@ -1,3 +1,25 @@
-import styled from 'styled-components'
+import styled, { css } from 'styled-components'
+import { HeadingProps } from '.'
 
-export const Wrapper = styled.main``
+export const Wrapper = styled.h2<HeadingProps>`
+  ${({ theme, color }) => css`
+    position: relative;
+    font-size: ${theme.font.sizes.medium};
+    line-height: 133.7%;
+    font-weight: ${theme.font.weight.medium};
+    color: ${theme.colors[color!]};
+  `}
+`
+
+export const Wavy = styled.div<Pick<HeadingProps, 'wavyColor'>>`
+  ${({ wavyColor }) => css`
+    display: flex;
+    position: absolute;
+    bottom: -15px;
+    background: ${wavyColor === 'primary'
+      ? `url('/img/line-red.png') bottom repeat-x`
+      : `url('/img/line-black.png') bottom repeat-x`};
+    width: 90px;
+    height: 9px;
+  `}
+`
