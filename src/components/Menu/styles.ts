@@ -8,7 +8,7 @@ export const Wrapper = styled.menu`
     padding: ${theme.spacings.medium} 0;
     z-index: ${theme.layers.menu};
     box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
-    overflow: hidden;
+    /* overflow: hidden; */
 
     ${Container} {
       display: flex;

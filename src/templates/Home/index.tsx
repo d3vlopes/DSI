@@ -2,9 +2,15 @@ import Base from 'templates/Base'
 import * as S from './styles'
 
 const Home = () => (
-  <Base>
-    <h1>Home</h1>
-  </Base>
+  <S.Wrapper>
+    <Base>
+      <S.SectionHero>
+        <S.HeroContent>
+          <h2>Content</h2>
+        </S.HeroContent>
+      </S.SectionHero>
+    </Base>
+  </S.Wrapper>
 )
 
 export default Home
