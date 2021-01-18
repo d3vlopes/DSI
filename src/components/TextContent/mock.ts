@@ -9,7 +9,7 @@ const TextContentMock: TextContentProps = {
 <h5>Heading</h5>
 <h6>Heading</h6>
 
-<img alt="" src="/img/item/pana.sbg" />
+<img alt="" src="/img/item/home.svg" />
 
 <p>
   Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero,

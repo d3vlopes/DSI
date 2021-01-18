@@ -79,4 +79,22 @@ describe('<TextContent />', () => {
       ),
     ).toBeInTheDocument()
   })
+
+  it('should render the child if is passed and not the content ', () => {
+    renderWithTheme(
+      <TextContent title={props.title}>
+        <h3>children</h3>
+      </TextContent>,
+    )
+
+    expect(
+      screen.getByRole('heading', { name: /children/i }),
+    ).toBeInTheDocument()
+
+    expect(
+      screen.queryByText(
+        /a with lorem ipsum dolor sit, amet consectetur adipisicing elit\. quia praesentium cupiditate tenetur quam illum\. fugiat consectetur assumenda in, vitae nemo, eaque quia numquam ad perspiciatis doloribus error eveniet quo officia\?/i,
+      ),
+    ).not.toBeInTheDocument()
+  })
 })
