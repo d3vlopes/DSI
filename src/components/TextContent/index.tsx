@@ -3,13 +3,15 @@ import Heading, { HeadingColor, HeadingWavyColor } from 'components/Heading'
 import * as S from './styles'
 
 export type TextContentProps = {
+  children?: React.ReactNode
   title?: string
   titleColor?: HeadingColor
-  content: string
+  content?: string
   wavyColor?: HeadingWavyColor
 }
 
 const TextContent = ({
+  children,
   title,
   titleColor = 'grey',
   content,
@@ -22,7 +24,8 @@ const TextContent = ({
       </Heading>
     )}
 
-    <div dangerouslySetInnerHTML={{ __html: content }}></div>
+    {!!content && <div dangerouslySetInnerHTML={{ __html: content }}></div>}
+    {!!children && children}
   </S.Wrapper>
 )
 
