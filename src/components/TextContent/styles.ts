@@ -3,6 +3,8 @@ import media from 'styled-media-query'
 
 export const Wrapper = styled.div`
   ${({ theme }) => css`
+    color: ${theme.colors.littleBlack};
+
     ${media.greaterThan('medium')`
       padding: ${theme.spacings.medium};
     `}
