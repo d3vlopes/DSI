@@ -15,6 +15,16 @@ const props = {
 }
 
 describe('<TextContent />', () => {
+  it('should render by default the littleBlack color', () => {
+    const { container } = renderWithTheme(
+      <TextContent content={props.content} />,
+    )
+
+    expect(container.firstChild).toHaveStyle({
+      color: '#263238',
+    })
+  })
+
   it('should render the default(without title) component', () => {
     renderWithTheme(<TextContent content={props.content} />)
 
