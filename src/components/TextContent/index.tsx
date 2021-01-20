@@ -17,7 +17,7 @@ const TextContent = ({
   content,
   wavyColor = 'primary',
 }: TextContentProps) => (
-  <S.Wrapper data-testid="wrapper">
+  <S.Wrapper id="text-content">
     {!!title && (
       <Heading color={titleColor} wavy wavyColor={wavyColor}>
         {title}
