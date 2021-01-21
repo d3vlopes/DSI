@@ -7,7 +7,7 @@ import { Wrapper as TextContentStyle } from 'components/TextContent/styles'
 import { ItemProps } from '.'
 
 export const Wrapper = styled.div<ItemProps>`
-  ${({ theme, color, reverse, img }) => css`
+  ${({ theme, color, reverse, img, children }) => css`
     background: ${theme.colors[color!]};
     padding: ${theme.spacings.medium};
 
@@ -24,7 +24,7 @@ export const Wrapper = styled.div<ItemProps>`
     h4,
     h5,
     h6 {
-      text-align: center;
+      text-align: ${children ? 'inherit' : 'center'};
       max-width: 36.4rem;
     }
 
@@ -41,6 +41,8 @@ export const Wrapper = styled.div<ItemProps>`
       > img {
         width: 50%;
         max-height: 54.9rem;
+        margin-left: ${reverse ? '8.4rem' : '0'};
+        margin-right: ${reverse ? '0' : '8.4rem'};
       }
 
 
@@ -57,10 +59,9 @@ export const Wrapper = styled.div<ItemProps>`
         max-width: 100%;
       }
 
-      ${TextContentStyle} {
-        margin-left: ${reverse ? '0' : '8.4rem'};
-        margin-right: ${reverse ? '8.4rem' : '0'};
-      }
+
+
+
     `}
 
     ${media.greaterThan('large')`

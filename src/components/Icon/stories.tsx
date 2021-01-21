@@ -2,6 +2,7 @@ import { Story, Meta } from '@storybook/react/types-6-0'
 
 import { UserGroup } from '@styled-icons/heroicons-outline/UserGroup'
 import { Dashboard3 } from '@styled-icons/remix-line/Dashboard3'
+
 import { Home } from '@styled-icons/heroicons-outline/Home'
 import { Envelope } from '@styled-icons/boxicons-regular/Envelope'
 import { Telephone } from '@styled-icons/bootstrap/Telephone'
