@@ -7,6 +7,7 @@ export type ItemProps = {
   img?: string
   alt?: string
   reverse?: boolean
+  reverseMobile?: boolean
   content?: string
   title?: string
 }
@@ -17,10 +18,17 @@ const Item = ({
   img,
   alt,
   reverse = false,
+  reverseMobile = false,
   content,
   title,
 }: ItemProps) => (
-  <S.Wrapper img={img} reverse={reverse} color={color}>
+  <S.Wrapper
+    id="item-wrapper"
+    img={img}
+    reverse={reverse}
+    reverseMobile={reverseMobile}
+    color={color}
+  >
     {!!img && <img src={img} alt={alt} />}
 
     {!!content && <TextContent content={content!} title={title!} />}
