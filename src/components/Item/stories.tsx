@@ -56,7 +56,20 @@ Reverse.args = {
 
 export const WithChildren: Story<ItemProps> = (args) => (
   <div style={{ maxWidth: '130rem', margin: '0 auto' }}>
-    <Item {...args} />
+    <Item {...args}>
+      <div>
+        <Icon
+          icon={<UserGroup />}
+          title="Vision"
+          content="<p>To become the leading application service provider (ASP) focusing on front-end application delivered for Indonesia’s banking and fi nancial industry.</p>"
+        />
+        <Icon
+          icon={<Dashboard3 />}
+          title="Mission"
+          content="<p>To grow the business together with clients by providing enhanced services and wide delivery channel to end-users.</p>"
+        />
+      </div>
+    </Item>
   </div>
 )
 
@@ -64,18 +77,4 @@ WithChildren.args = {
   img: mock[3].img,
   title: mock[3].title,
   content: mock[3].content,
-  children: (
-    <div>
-      <Icon
-        icon={<UserGroup />}
-        title="Vision"
-        content="<p>To become the leading application service provider (ASP) focusing on front-end application delivered for Indonesia’s banking and fi nancial industry.</p>"
-      />
-      <Icon
-        icon={<Dashboard3 />}
-        title="Mission"
-        content="<p>To grow the business together with clients by providing enhanced services and wide delivery channel to end-users.</p>"
-      />
-    </div>
-  ),
 }
