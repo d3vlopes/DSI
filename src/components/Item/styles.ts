@@ -2,18 +2,20 @@ import styled, { css } from 'styled-components'
 import media from 'styled-media-query'
 
 import { Wrapper as HeadingStyle } from 'components/Heading/styles'
-import { Wrapper as TextContentStyle } from 'components/TextContent/styles'
 
 import { ItemProps } from '.'
 
 export const Wrapper = styled.div<ItemProps>`
-  ${({ theme, color, reverse, img, children }) => css`
+  ${({ theme, color, reverse, reverseMobile, img }) => css`
+    display: flex;
+    flex-direction: ${reverseMobile ? 'column-reverse' : 'column'};
     background: ${theme.colors[color!]};
     padding: ${theme.spacings.medium};
 
     > img {
       width: 100%;
       margin-bottom: ${theme.spacings.large};
+      margin-top: ${reverseMobile ? `${theme.spacings.xxlarge}` : '0'};
     }
 
     ${HeadingStyle} {
@@ -21,22 +23,20 @@ export const Wrapper = styled.div<ItemProps>`
     }
 
     h3,
-    h4,
     h5,
     h6 {
-      text-align: ${children ? 'inherit' : 'center'};
+      text-align: center;
       max-width: 36.4rem;
     }
 
     p {
-      max-width: 35.8rem;
+      max-width: ${img ? '35.8rem' : '100%'};
       margin-top: ${theme.spacings.medium};
     }
 
     ${media.greaterThan('medium')`
-      display: flex;
-      flex-direction: ${reverse ? 'row-reverse' : 'flex'};
-      justify-content: ${img ? 'center' : 'flex-start'};
+      flex-direction: ${reverse ? 'row-reverse' : 'row'};
+      justify-content: center;
 
       > img {
         width: 50%;
@@ -55,13 +55,9 @@ export const Wrapper = styled.div<ItemProps>`
       h4,
       h5,
       h6 {
-        text-align: inherit;
+        text-align: initial;
         max-width: 100%;
       }
-
-
-
-
     `}
 
     ${media.greaterThan('large')`
