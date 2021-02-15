@@ -11,7 +11,7 @@ export default {
     size: {
       control: {
         type: 'select',
-        options: ['normal', 'large'],
+        options: ['small', 'normal', 'large'],
       },
     },
     styles: {
