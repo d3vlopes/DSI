@@ -5,6 +5,12 @@ import { ButtonProps } from '.'
 export type WrapperProps = Pick<ButtonProps, 'size' | 'styles'>
 
 const wrapperModifiers = {
+  small: (theme: DefaultTheme) => css`
+    width: 11.9rem;
+    height: 4.2rem;
+    font-size: ${theme.font.sizes.xxsmall};
+    line-height: 144.69%;
+  `,
   normal: () => css`
     width: 16.1rem;
   `,
@@ -44,7 +50,7 @@ export const Wrapper = styled.button<WrapperProps>`
     box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.25);
     transition: background-color ${theme.transition.fast};
 
-    ${!!size && wrapperModifiers[size]()}
+    ${!!size && wrapperModifiers[size](theme)}
     ${!!styles && wrapperModifiers[styles](theme)}
   `}
 `
