@@ -7,7 +7,7 @@ type ButtonTypes =
   | ButtonHTMLAttributes<HTMLButtonElement>
 
 export type ButtonProps = {
-  size?: 'normal' | 'large'
+  size?: 'small' | 'normal' | 'large'
   styles?: 'primary' | 'secondary'
   as?: React.ElementType
 } & ButtonTypes
