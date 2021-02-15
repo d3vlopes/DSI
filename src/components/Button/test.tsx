@@ -20,6 +20,19 @@ describe('<Button />', () => {
     })
   })
 
+  it('should render the small size ', () => {
+    renderWithTheme(<Button size="small">Button</Button>)
+
+    const button = screen.getByRole('button', { name: /button/i })
+
+    expect(button).toHaveStyle({
+      width: '11.9rem',
+      height: '4.2rem',
+      'font-size': '1.8rem',
+      'line-height': '144.69%',
+    })
+  })
+
   it('should render the large size ', () => {
     renderWithTheme(<Button size="large">Button</Button>)
 
