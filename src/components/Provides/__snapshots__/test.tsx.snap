@@ -1,0 +1,174 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Provides /> should render three Provides 1`] = `
+.c2 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  border: 0;
+  cursor: pointer;
+  border-radius: 0.4rem;
+  padding: 1.2rem;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  font-size: 2.0rem;
+  box-shadow: 1px 2px 4px rgba(0,0,0,0.25);
+  -webkit-transition: background-color 0.1s ease-in-out;
+  transition: background-color 0.1s ease-in-out;
+  width: 11.9rem;
+  height: 4.2rem;
+  font-size: 1.8rem;
+  line-height: 144.69%;
+  background-color: #EE4248;
+  color: #FFFFFF;
+}
+
+.c2:hover {
+  background-color: #de3f45;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-bottom: 3.2rem;
+}
+
+.c1 > img {
+  max-width: 100%;
+}
+
+.c1 > h3 {
+  font-size: 2.8rem;
+  font-weight: 500;
+  line-height: 133.69%;
+  color: #EE4248;
+  margin: 1.6rem 0;
+}
+
+.c1 > p {
+  max-width: 35.9rem;
+  line-height: 150%;
+  text-align: center;
+  color: #30444E;
+  margin: 1.6rem 0;
+}
+
+@media (min-width:768px) {
+  .c0 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+@media (min-width:768px) {
+  .c1 {
+    -webkit-align-items: flex-start;
+    -webkit-box-align: flex-start;
+    -ms-flex-align: flex-start;
+    align-items: flex-start;
+    margin-left: 5.3rem;
+  }
+}
+
+@media (min-width:768px) {
+  .c1 > p {
+    text-align: initial;
+    max-width: 31.9rem;
+  }
+}
+
+<div
+  class="c0"
+>
+  <div
+    class="c1"
+    id="provide"
+  >
+    <img
+      alt="Our Product"
+      src="img/products/product.png"
+    />
+    <h3>
+      Our Product
+    </h3>
+    <p>
+      Our product is made on the base of our team’s careful research and analyses, ranging from internet based application.
+    </p>
+    <button
+      class="c2"
+    >
+      <span>
+        Read More
+      </span>
+    </button>
+  </div>
+  <div
+    class="c1"
+    id="provide"
+  >
+    <img
+      alt="Our Service"
+      src="img/products/service.png"
+    />
+    <h3>
+      Our Service
+    </h3>
+    <p>
+      DSI’s shared service solutions focus on the front-end based software development, designed specifically for the banking and financial sectors.
+    </p>
+    <button
+      class="c2"
+    >
+      <span>
+        Read More
+      </span>
+    </button>
+  </div>
+  <div
+    class="c1"
+    id="provide"
+  >
+    <img
+      alt="Our Technology"
+      src="img/products/technology.png"
+    />
+    <h3>
+      Our Technology
+    </h3>
+    <p>
+      First JAVA, runs on more than 850 million personal computers worldwide, and on billions of devices worldwide, including mobile and TV devices.
+    </p>
+    <button
+      class="c2"
+    >
+      <span>
+        Read More
+      </span>
+    </button>
+  </div>
+</div>
+`;
