@@ -9,7 +9,7 @@ describe('<Hero />', () => {
 
     expect(screen.getByText(/content/i)).toBeInTheDocument()
 
-    expect(container.querySelector('#hero')).toHaveStyle({
+    expect(container.firstChild).toHaveStyle({
       background: '#FFFFFF',
     })
   })
@@ -19,7 +19,7 @@ describe('<Hero />', () => {
       <Hero borderStyle="bottom">content</Hero>,
     )
 
-    expect(container.querySelector('#hero > div')).toHaveStyle({
+    expect(container.firstElementChild?.querySelector('div')).toHaveStyle({
       background: '#F6F6F6',
       height: '3.6rem',
     })
@@ -32,7 +32,7 @@ describe('<Hero />', () => {
       </Hero>,
     )
 
-    expect(container.querySelector('#hero > div')).toHaveStyle({
+    expect(container.firstElementChild?.querySelector('div')).toHaveStyle({
       background: '#EE4248',
       height: '1.7rem',
     })

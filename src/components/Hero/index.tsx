@@ -15,7 +15,7 @@ const Hero = ({
   colorBorder = 'whiteF6',
   backgroundColor = 'white',
 }: HeroProps) => (
-  <S.Wrapper id="hero" backgroundColor={backgroundColor}>
+  <S.Wrapper backgroundColor={backgroundColor}>
     {children}
     {borderStyle === 'bottom' && (
       <S.Bottom borderStyle={borderStyle} colorBorder={colorBorder}></S.Bottom>
