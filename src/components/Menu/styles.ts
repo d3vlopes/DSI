@@ -74,7 +74,7 @@ export const MenuLink = styled.a`
     text-decoration: none;
 
     ${media.lessThan('large')`
-      margin: 0 2.5rem 0;
+      margin: 0 2rem 0;
     `}
 
     ${media.greaterThan('large')`
