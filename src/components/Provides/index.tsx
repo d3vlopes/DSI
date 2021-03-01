@@ -14,7 +14,7 @@ export type ProvidesProps = {
 
 const Provides = ({ items }: ProvidesProps) => (
   <S.Wrapper>
-    {items.map((item, index) => (
+    {items?.map((item, index) => (
       <S.Provide key={`provide-${index}`} id="provide">
         <img src={`${item.image}`} alt={`${item.title}`} />
         <h3>{item.title}</h3>
