@@ -52,6 +52,9 @@ exports[`<Provides /> should render three Provides 1`] = `
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
+}
+
+.c1:not(:last-of-type) {
   margin-bottom: 3.2rem;
 }
 
@@ -81,10 +84,32 @@ exports[`<Provides /> should render three Provides 1`] = `
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
+    -webkit-flex-flow: row wrap;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
+    -webkit-box-pack: space-around;
+    -webkit-justify-content: space-around;
+    -ms-flex-pack: space-around;
+    justify-content: space-around;
+  }
+}
+
+@media (min-width:1170px) {
+  .c0 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
   }
 }
 
 @media (min-width:768px) {
+  .c1 {
+    margin-left: 5.3rem;
+  }
+}
+
+@media (min-width:1170px) {
   .c1 {
     -webkit-align-items: flex-start;
     -webkit-box-align: flex-start;
@@ -94,7 +119,7 @@ exports[`<Provides /> should render three Provides 1`] = `
   }
 }
 
-@media (min-width:768px) {
+@media (min-width:1170px) {
   .c1 > p {
     text-align: initial;
     max-width: 31.9rem;
