@@ -4,6 +4,8 @@ import media from 'styled-media-query'
 import { Content } from 'templates/Base/styles'
 
 import * as HeroStyles from 'components/Hero/styles'
+import * as TextContentStyles from 'components/TextContent/styles'
+import * as ItemStyles from 'components/Item/styles'
 
 export const Wrapper = styled.div`
   ${Content} {
@@ -12,21 +14,21 @@ export const Wrapper = styled.div`
 `
 
 export const SectionHero = styled.section`
-  display: flex;
-  justify-content: center;
-
-  ${HeroStyles.Wrapper} > div {
+  ${HeroStyles.Wrapper} {
     ${({ theme }) => css`
       display: flex;
       flex-direction: column-reverse;
+      align-items: center;
       padding: 5.4rem ${theme.spacings.small} 4.7rem ${theme.spacings.small};
 
       ${media.greaterThan('medium')`
         flex-direction: initial;
+
       `}
 
       ${media.greaterThan('huge')`
         padding: 5.1rem 0 10rem 0;
+
       `}
     `}
   }
@@ -42,7 +44,7 @@ export const HeroContent = styled.div`
       align-items: flex-start;
     `}
 
-    > div > h2 {
+    > h2 {
       font-size: ${theme.font.sizes.large};
       font-weight: ${theme.font.weight.medium};
       max-width: 37.3rem;
@@ -88,8 +90,68 @@ export const HeroDescription = styled.p`
 `
 
 export const HeroImage = styled.div`
-  img {
+  > img {
     width: 100%;
     max-width: 52.6rem;
   }
+
+  ${media.greaterThan('medium')`
+    > img {
+      margin-left: 3.2rem;
+    }
+  `}
+
+  ${media.greaterThan('large')`
+    > img {
+      margin-left: 5.2rem;
+    }
+  `}
+`
+export const SectionAbout = styled.section`
+  ${({ theme }) => css`
+    ${TextContentStyles.Wrapper} > div > h3 {
+      font-size: ${theme.font.sizes.medium};
+      font-weight: ${theme.font.weight.medium};
+      line-height: 133.69%;
+      color: ${theme.colors.black};
+      text-align: center;
+    }
+
+    ${media.greaterThan('medium')`
+      ${TextContentStyles.Wrapper} > div > h3 {
+        text-align: initial;
+      }
+    `}
+
+    ${media.greaterThan('large')`
+      ${TextContentStyles.Wrapper} > div > h3 {
+        max-width: 45.4rem;
+      }
+    `}
+
+    ${TextContentStyles.Wrapper} > div > h3 > span {
+      color: ${theme.colors.primary};
+    }
+
+    ${TextContentStyles.Wrapper} > div > p > span {
+      color: ${theme.colors.primary};
+      font-weight: ${theme.font.weight.medium};
+    }
+
+    ${ItemStyles.Wrapper} {
+      display: flex;
+      align-items: center;
+    }
+
+    ${ItemStyles.Wrapper} > img {
+      max-width: 34.9rem;
+      height: auto;
+    }
+
+    ${media.greaterThan('medium')`
+      ${ItemStyles.Wrapper} > img {
+        max-width: 45.3rem;
+      }
+    `}
+  `}
 `
