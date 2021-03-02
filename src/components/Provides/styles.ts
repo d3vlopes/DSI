@@ -2,6 +2,9 @@ import styled, { css } from 'styled-components'
 import media from 'styled-media-query'
 
 export const Wrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+
   ${media.greaterThan('medium')`
     display: flex;
     flex-flow: row wrap;
@@ -9,7 +12,9 @@ export const Wrapper = styled.div`
   `}
 
   ${media.greaterThan('large')`
-    display: flex;
+    flex-flow: row no-wrap;
+    justify-content: space-between;
+    margin-left: -1.5rem;
   `}
 `
 
@@ -31,6 +36,7 @@ export const Provide = styled.div`
     ${media.greaterThan('large')`
       align-items: flex-start;
       margin-left: 5.3rem;
+      justify-content: initial;
     `}
 
     > img {
