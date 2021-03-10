@@ -5,10 +5,12 @@ import Home from '.'
 
 import mockHero from 'components/Hero/mock'
 import mockAbout from 'components/Item/mock'
+import mockProvides from 'components/Provides/mock'
 
 const props = {
   hero: mockHero[0],
   about: mockAbout[0],
+  provides: mockProvides,
 }
 
 jest.mock('components/Hero', () => {
@@ -33,11 +35,23 @@ jest.mock('components/Item', () => {
   }
 })
 
+jest.mock('components/Provides', () => {
+  return {
+    __esModule: true,
+    default: function Mock() {
+      return <div data-testid="Mock Provides"></div>
+    },
+  }
+})
+
 describe('<Home />', () => {
   it('should render Home', () => {
-    renderWithTheme(<Home {...props} />)
+    const { container } = renderWithTheme(<Home {...props} />)
 
     expect(screen.getByTestId('Mock Hero')).toBeInTheDocument()
     expect(screen.getByTestId('Mock About')).toBeInTheDocument()
+    expect(screen.getByTestId('Mock Provides')).toBeInTheDocument()
+
+    expect(container.firstChild).toMatchSnapshot()
   })
 })
