@@ -1,0 +1,1002 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Home /> should render Home 1`] = `
+.c15 {
+  display: inline-block;
+  vertical-align: middle;
+  overflow: hidden;
+}
+
+.c5 {
+  display: none;
+}
+
+.c8 {
+  display: none;
+}
+
+.c4 {
+  width: 100%;
+  max-width: 130rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: calc(3.2rem / 2);
+  padding-right: calc(3.2rem / 2);
+}
+
+.c2 {
+  padding: 2.4rem 0;
+  z-index: 20;
+  box-shadow: 0px 1px 4px rgba(0,0,0,0.25);
+}
+
+.c2 .c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c6 {
+  color: #1F2E35;
+  cursor: pointer;
+  width: 2.4rem;
+  height: 2.4rem;
+}
+
+.c14 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c14 > div {
+  margin-left: 2.4rem;
+}
+
+.c10 .active {
+  font-weight: 700;
+}
+
+.c12 {
+  font-size: 1.8rem;
+  color: #1F2E35;
+  margin: 0 5rem 0;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c16 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  background: #FFFFFF;
+  position: fixed;
+  z-index: 20;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100vh;
+  overflow: hidden;
+  -webkit-transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.c16 > svg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 1rem;
+  cursor: pointer;
+  width: 2.4rem;
+  height: 2.4rem;
+}
+
+.c16 .c9 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin: 3.2rem 0;
+}
+
+.c16 .c11 {
+  margin-bottom: 1.6rem;
+  -webkit-transform: translateY(3rem);
+  -ms-transform: translateY(3rem);
+  transform: translateY(3rem);
+  -webkit-transition: -webkit-transform 0.3s ease-in-out;
+  -webkit-transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
+}
+
+.c16 .c13 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+}
+
+.c30 {
+  color: #263238;
+}
+
+.c29 {
+  padding-top: 1.6rem;
+}
+
+.c31 {
+  margin: 0.6rem 0 3.2rem 0;
+}
+
+.c31 > h4 {
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+.c31 > div {
+  max-width: 31.7rem;
+}
+
+.c31 > div > span {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  font-weight: 300;
+  line-height: 149.19%;
+}
+
+.c32 {
+  margin-bottom: 3.2rem;
+}
+
+.c32 > h3 {
+  margin-bottom: 1rem;
+  font-size: 2.4rem;
+  font-weight: 500;
+}
+
+.c32 > div {
+  max-width: 26.9rem;
+}
+
+.c32 > div > span {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  font-weight: 300;
+  line-height: 149.19%;
+}
+
+.c33 {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 1.6rem;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-bottom: 3.2rem;
+}
+
+.c33 img {
+  max-width: min(100%,8.9rem);
+}
+
+.c34 {
+  padding: 2.4rem 0;
+  background-color: #EE4248;
+  color: #FFFFFF;
+  text-align: center;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  height: 100vh;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.c18 {
+  margin-top: 3.2rem;
+  -webkit-flex: 1 0 auto;
+  -ms-flex: 1 0 auto;
+  flex: 1 0 auto;
+}
+
+.c28 {
+  margin-top: 2.9rem;
+  padding-top: 3.5rem;
+}
+
+.c23 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  border: 0;
+  cursor: pointer;
+  border-radius: 0.4rem;
+  padding: 1.2rem;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  font-size: 2.0rem;
+  box-shadow: 1px 2px 4px rgba(0,0,0,0.25);
+  -webkit-transition: background-color 0.1s ease-in-out;
+  transition: background-color 0.1s ease-in-out;
+  width: 16.1rem;
+  background-color: #EE4248;
+  color: #FFFFFF;
+}
+
+.c23:hover {
+  background-color: #de3f45;
+}
+
+.c27 {
+  position: relative;
+  font-size: 3.2rem;
+  line-height: 133.7%;
+  font-weight: 500;
+  color: #1F2E35;
+}
+
+.c0 .c17 {
+  margin-top: 0;
+}
+
+.c19 .sc-hHftDr {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column-reverse;
+  -ms-flex-direction: column-reverse;
+  flex-direction: column-reverse;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 5.4rem 1.6rem 4.7rem 1.6rem;
+}
+
+.c20 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c20 > h2 {
+  font-size: 3.4rem;
+  font-weight: 500;
+  max-width: 37.3rem;
+  text-align: center;
+  margin: 3.2rem 0 1.6rem 0;
+}
+
+.c21 {
+  color: #1F2E35;
+}
+
+.c21 > span {
+  color: #EE4248;
+}
+
+.c22 {
+  font-size: 2.0rem;
+  line-height: 144.7%;
+  max-width: 38.3rem;
+  text-align: center;
+  margin-bottom: 1.6rem;
+}
+
+.c24 > img {
+  width: 100%;
+  max-width: 52.6rem;
+}
+
+.c25 .sc-kfzAmx > div > h3 {
+  font-size: 3.2rem;
+  font-weight: 500;
+  line-height: 133.69%;
+  color: #30444E;
+  text-align: center;
+}
+
+.c25 .sc-kfzAmx > div > h3 > span {
+  color: #EE4248;
+}
+
+.c25 .sc-kfzAmx > div > p > span {
+  color: #EE4248;
+  font-weight: 500;
+}
+
+.c25 .sc-fKFyDc {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c25 .sc-fKFyDc > img {
+  max-width: 34.9rem;
+  height: auto;
+}
+
+.c26 {
+  margin: 3.6rem 0 calc(6.4rem - 2.9rem);
+}
+
+.c26 > h2 {
+  margin-bottom: 2.4rem;
+  text-align: center;
+}
+
+@media (max-width:768px) {
+  .c5 {
+    display: block;
+  }
+}
+
+@media (min-width:768px) {
+  .c8 {
+    display: block;
+  }
+}
+
+@media (max-width:768px) {
+  .c2 .c3 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+}
+
+@media (max-width:1170px) {
+  .c14 {
+    display: none;
+  }
+}
+
+@media (max-width:768px) {
+  .c7 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+@media (max-width:1170px) {
+  .c12 {
+    margin: 0 2rem 0;
+  }
+}
+
+@media (min-width:1170px) {
+  .c12 {
+    margin: 0 3.5rem 0;
+  }
+}
+
+@media (min-width:768px) {
+  .c30 {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    margin-bottom: 1rem;
+  }
+}
+
+@media (min-width:768px) {
+  .c31 {
+    margin-top: 1rem;
+  }
+}
+
+@media (min-width:768px) {
+  .c19 .sc-hHftDr {
+    -webkit-flex-direction: initial;
+    -ms-flex-direction: initial;
+    flex-direction: initial;
+  }
+}
+
+@media (min-width:1440px) {
+  .c19 .sc-hHftDr {
+    padding: 5.1rem 0 10rem 0;
+  }
+}
+
+@media (min-width:768px) {
+  .c20 {
+    -webkit-align-items: flex-start;
+    -webkit-box-align: flex-start;
+    -ms-flex-align: flex-start;
+    align-items: flex-start;
+  }
+}
+
+@media (min-width:768px) {
+  .c20 > h2 {
+    text-align: initial;
+    margin: 0 0 2.4rem 0;
+  }
+}
+
+@media (min-width:768px) {
+  .c22 {
+    text-align: initial;
+    max-width: 42rem;
+    margin-bottom: 2.4rem;
+  }
+}
+
+@media (min-width:1440px) {
+  .c22 {
+    max-width: 52rem;
+  }
+}
+
+@media (min-width:768px) {
+  .c24 > img {
+    margin-left: 3.2rem;
+  }
+}
+
+@media (min-width:1170px) {
+  .c24 > img {
+    margin-left: 5.2rem;
+  }
+}
+
+@media (min-width:768px) {
+  .c25 .sc-kfzAmx > div > h3 {
+    text-align: initial;
+  }
+}
+
+@media (min-width:1170px) {
+  .c25 .sc-kfzAmx > div > h3 {
+    max-width: 45.4rem;
+  }
+}
+
+@media (min-width:768px) {
+  .c25 .sc-fKFyDc > img {
+    max-width: 45.3rem;
+  }
+}
+
+@media (min-width:1170px) {
+  .c26 {
+    margin: 9.6rem 0 calc(8.7rem - 2.9rem);
+  }
+}
+
+<div
+  class="c0"
+>
+  <div
+    class="c1"
+  >
+    <menu
+      class="c2"
+    >
+      <div
+        class="c3 c4"
+      >
+        <img
+          alt="Letters DSI and words DWIDASA, SAMSARA, INDONESIA"
+          class=""
+          src="/img/logo.png"
+        />
+        <div
+          class="c5"
+        >
+          <div
+            class="c6"
+          >
+            <img
+              alt="Open Menu"
+              class="c7"
+              src="/icon/menu-icon.svg"
+            />
+          </div>
+        </div>
+        <div
+          class="c8"
+        >
+          <div
+            class="c9 c10"
+          >
+            <a
+              class="c11 c12"
+              href="/"
+            >
+              Services
+            </a>
+            <a
+              class="c11 c12"
+              href="#"
+            >
+              Product
+            </a>
+            <a
+              class="c11 c12"
+              href="#"
+            >
+              Technology
+            </a>
+            <a
+              class="c11 c12"
+              href="#"
+            >
+              About
+            </a>
+            <a
+              class="c11 c12"
+              href="#"
+            >
+              Client
+            </a>
+            <a
+              class="c11 c12"
+              href="#"
+            >
+              Partner
+            </a>
+          </div>
+        </div>
+        <div
+          class="c13 c14"
+          id="menu-group"
+        >
+          <div
+            class="c6"
+            id="menu-group-icon"
+          >
+            <svg
+              aria-hidden="true"
+              aria-label="Go to home"
+              class="c15"
+              fill="none"
+              focusable="false"
+              id="menu-home-icon"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+              />
+            </svg>
+          </div>
+          <div
+            class="c6"
+            id="menu-group-icon"
+          >
+            <svg
+              aria-hidden="true"
+              aria-label="Send message"
+              class="c15"
+              fill="currentColor"
+              focusable="false"
+              id="menu-email-icon"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g
+                data-name="Layer 2"
+              >
+                <path
+                  d="M19 4H5a3 3 0 00-3 3v10a3 3 0 003 3h14a3 3 0 003-3V7a3 3 0 00-3-3zm-.67 2L12 10.75 5.67 6zM19 18H5a1 1 0 01-1-1V7.25l7.4 5.55a1 1 0 00.6.2 1 1 0 00.6-.2L20 7.25V17a1 1 0 01-1 1z"
+                  data-name="email"
+                />
+              </g>
+            </svg>
+          </div>
+          <div
+            class="c6"
+            id="menu-group-icon"
+          >
+            <svg
+              aria-hidden="true"
+              aria-label="Media"
+              class="c15"
+              fill="currentColor"
+              focusable="false"
+              id="menu-shuffle-icon"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M0 0h24v24H0z"
+                fill="none"
+              />
+              <path
+                d="M10.59 9.17L5.41 4 4 5.41l5.17 5.17 1.42-1.41zM14.5 4l2.04 2.04L4 18.59 5.41 20 17.96 7.46 20 9.5V4h-5.5zm.33 9.41l-1.41 1.41 3.13 3.13L14.5 20H20v-5.5l-2.04 2.04-3.13-3.13z"
+              />
+            </svg>
+          </div>
+        </div>
+      </div>
+      <nav
+        aria-hidden="true"
+        class="c16"
+      >
+        <svg
+          aria-hidden="true"
+          aria-label="Close Menu"
+          class="c15"
+          fill="currentColor"
+          focusable="false"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M0 0h24v24H0V0z"
+            fill="none"
+          />
+          <path
+            d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"
+          />
+        </svg>
+        <div>
+          <div
+            class="c9 c10"
+          >
+            <a
+              class="c11 c12"
+              href="/"
+            >
+              Services
+            </a>
+            <a
+              class="c11 c12"
+              href="#"
+            >
+              Product
+            </a>
+            <a
+              class="c11 c12"
+              href="#"
+            >
+              Technology
+            </a>
+            <a
+              class="c11 c12"
+              href="#"
+            >
+              About
+            </a>
+            <a
+              class="c11 c12"
+              href="#"
+            >
+              Client
+            </a>
+            <a
+              class="c11 c12"
+              href="#"
+            >
+              Partner
+            </a>
+          </div>
+          <div
+            class="c13 c14"
+            id="mobile-menu-group"
+          >
+            <div
+              class="c6"
+            >
+              <svg
+                aria-hidden="true"
+                aria-label="Go to home"
+                class="c15"
+                fill="none"
+                focusable="false"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                />
+              </svg>
+            </div>
+            <div
+              class="c6"
+            >
+              <svg
+                aria-hidden="true"
+                aria-label="Send message"
+                class="c15"
+                fill="currentColor"
+                focusable="false"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g
+                  data-name="Layer 2"
+                >
+                  <path
+                    d="M19 4H5a3 3 0 00-3 3v10a3 3 0 003 3h14a3 3 0 003-3V7a3 3 0 00-3-3zm-.67 2L12 10.75 5.67 6zM19 18H5a1 1 0 01-1-1V7.25l7.4 5.55a1 1 0 00.6.2 1 1 0 00.6-.2L20 7.25V17a1 1 0 01-1 1z"
+                    data-name="email"
+                  />
+                </g>
+              </svg>
+            </div>
+            <div
+              class="c6"
+            >
+              <svg
+                aria-hidden="true"
+                aria-label="Media"
+                class="c15"
+                fill="currentColor"
+                focusable="false"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M0 0h24v24H0z"
+                  fill="none"
+                />
+                <path
+                  d="M10.59 9.17L5.41 4 4 5.41l5.17 5.17 1.42-1.41zM14.5 4l2.04 2.04L4 18.59 5.41 20 17.96 7.46 20 9.5V4h-5.5zm.33 9.41l-1.41 1.41 3.13 3.13L14.5 20H20v-5.5l-2.04 2.04-3.13-3.13z"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </menu>
+    <div
+      class="c17 c18"
+    >
+      <section
+        class="c19"
+      >
+        <div
+          class="c3 c4"
+        >
+          <div
+            data-testid="Mock Hero"
+            id="hero"
+          >
+            <div
+              class="c20"
+            >
+              <h2
+                class="c21"
+              >
+                Making the most of the ever-growing 
+                <br />
+                <span>
+                  Information Technology
+                </span>
+              </h2>
+              <p
+                class="c22"
+              >
+                Managed by a team of professional experts with extensive experience and impressive track records
+              </p>
+              <button
+                class="c23"
+              >
+                <span>
+                  Read More
+                </span>
+              </button>
+            </div>
+            <div
+              class="c24"
+            >
+              <img
+                alt="A person next to various types of devices"
+                src="img/hero/home.png"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section
+        class="c25"
+      >
+        <div
+          data-testid="Mock About"
+        />
+      </section>
+      <section
+        class="c26"
+      >
+        <h2
+          class="c27"
+          color="grey"
+        >
+          Product and Service
+        </h2>
+        <div
+          class="c3 c4"
+        >
+          <div
+            data-testid="Mock Provides"
+          />
+        </div>
+      </section>
+    </div>
+    <section
+      class="c28"
+    >
+      <footer
+        class=""
+      >
+        <div
+          class="c3 c4"
+        >
+          <img
+            alt="Letters DSI and words DWIDASA, SAMSARA, INDONESIA"
+            class="c29"
+            src="/img/logo.png"
+          />
+          <div
+            class="c30"
+          >
+            <div
+              class="c31"
+            >
+              <h4>
+                PT Dwidasa Samsara Indonesia
+              </h4>
+              <div>
+                <span>
+                  Ruko Jalur Sutera 29A No. 53
+                </span>
+                <span>
+                  Alam Sutera Serpong, Tangerang 15323
+                </span>
+              </div>
+            </div>
+            <div
+              class="c32"
+            >
+              <h3>
+                Contact
+              </h3>
+              <div>
+                <span>
+                  Phone : +62.21.5314.1135
+                </span>
+                <span>
+                  Fax : +62.21.5314.1135
+                </span>
+                <span>
+                  Email : community@dwidasa.com
+                </span>
+              </div>
+            </div>
+            <div
+              class="c33"
+            >
+              <img
+                alt="icon of Microsoft Silverlight"
+                id="platform-0"
+                src="/img/platform/microsoft.png"
+              />
+              <img
+                alt="icon of Microsoft .Net Framework"
+                id="platform-1"
+                src="/img/platform/net.png"
+              />
+              <img
+                alt="icon of Java"
+                id="platform-2"
+                src="/img/platform/java.png"
+              />
+              <img
+                alt="icon of IOS"
+                id="platform-3"
+                src="/img/platform/ios.png"
+              />
+              <img
+                alt="icon of Android"
+                id="platform-4"
+                src="/img/platform/android.png"
+              />
+              <img
+                alt="icon of Black Berry"
+                id="platform-5"
+                src="/img/platform/black-berry.png"
+              />
+            </div>
+          </div>
+        </div>
+        <div
+          class="c34"
+        >
+          Copyright © 2021 - Dwidasa Samsara Indonesia
+        </div>
+      </footer>
+    </section>
+  </div>
+</div>
+`;
