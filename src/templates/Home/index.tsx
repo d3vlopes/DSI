@@ -2,8 +2,10 @@ import Base from 'templates/Base'
 
 import Hero from 'components/Hero'
 import Button from 'components/Button'
-import { Container } from 'components/Container'
+import Heading from 'components/Heading'
 import Item, { ItemProps } from 'components/Item'
+import Provides, { ProvideProps } from 'components/Provides'
+import { Container } from 'components/Container'
 
 import * as S from './styles'
 
@@ -14,9 +16,10 @@ export type HomeTemplateProps = {
     src: string
   }
   about: ItemProps
+  provides: ProvideProps[]
 }
 
-const Home = ({ hero, about }: HomeTemplateProps) => (
+const Home = ({ hero, about, provides }: HomeTemplateProps) => (
   <S.Wrapper>
     <Base>
       <S.SectionHero>
@@ -49,6 +52,13 @@ const Home = ({ hero, about }: HomeTemplateProps) => (
           color="whiteF6"
         />
       </S.SectionAbout>
+
+      <S.SectionProvides>
+        <Heading>Product and Service</Heading>
+        <Container>
+          <Provides items={provides} />
+        </Container>
+      </S.SectionProvides>
     </Base>
   </S.Wrapper>
 )
