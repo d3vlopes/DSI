@@ -109,7 +109,7 @@ export const HeroImage = styled.div`
 `
 export const SectionAbout = styled.section`
   ${({ theme }) => css`
-    ${TextContentStyles.Wrapper} > div > h3 {
+    ${TextContentStyles.Wrapper} > div > h1 {
       font-size: ${theme.font.sizes.medium};
       font-weight: ${theme.font.weight.medium};
       line-height: 133.69%;
@@ -118,18 +118,18 @@ export const SectionAbout = styled.section`
     }
 
     ${media.greaterThan('medium')`
-      ${TextContentStyles.Wrapper} > div > h3 {
+      ${TextContentStyles.Wrapper} > div > h1 {
         text-align: initial;
       }
     `}
 
     ${media.greaterThan('large')`
-      ${TextContentStyles.Wrapper} > div > h3 {
+      ${TextContentStyles.Wrapper} > div > h1 {
         max-width: 45.4rem;
       }
     `}
 
-    ${TextContentStyles.Wrapper} > div > h3 > span {
+    ${TextContentStyles.Wrapper} > div > h1 > span {
       color: ${theme.colors.primary};
     }
 
@@ -153,5 +153,20 @@ export const SectionAbout = styled.section`
         max-width: 45.3rem;
       }
     `}
+  `}
+`
+
+export const SectionProvides = styled.section`
+  ${({ theme }) => css`
+    margin: 3.6rem 0 calc(6.4rem - ${theme.spacings.large});
+
+    ${media.greaterThan('large')`
+      margin: 9.6rem 0 calc(8.7rem - ${theme.spacings.large});
+    `}
+
+    > h2 {
+      margin-bottom: ${theme.spacings.medium};
+      text-align: center;
+    }
   `}
 `
