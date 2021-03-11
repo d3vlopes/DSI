@@ -10,7 +10,12 @@ import { Container } from 'components/Container'
 
 import * as S from './styles'
 
-const Menu = () => {
+export type MenuProps = {
+  // eslint-disable-next-line prettier/prettier
+  activeLink?: '/services' | '/product' | '/technology' | '/about' | '/client' | '/partner' | string
+}
+
+const Menu = ({ activeLink }: MenuProps) => {
   const [isOpen, setIsOpen] = useState(false)
 
   return (
@@ -28,14 +33,60 @@ const Menu = () => {
 
         <MediaMatch greaterThan="medium">
           <S.MenuNav>
-            <Link href="/" passHref>
-              <S.MenuLink href="#">Services</S.MenuLink>
+            <Link href="/services" passHref>
+              <S.MenuLink
+                id="menu-link-services"
+                isActive={activeLink === '/services'}
+                title="Services"
+              >
+                Services
+              </S.MenuLink>
             </Link>
-            <S.MenuLink href="#">Product</S.MenuLink>
-            <S.MenuLink href="#">Technology</S.MenuLink>
-            <S.MenuLink href="#">About</S.MenuLink>
-            <S.MenuLink href="#">Client</S.MenuLink>
-            <S.MenuLink href="#">Partner</S.MenuLink>
+            <Link href="/product" passHref>
+              <S.MenuLink
+                id="menu-link-product"
+                isActive={activeLink === '/product'}
+                title="Product"
+              >
+                Product
+              </S.MenuLink>
+            </Link>
+            <Link href="/technology" passHref>
+              <S.MenuLink
+                id="menu-link-technology"
+                isActive={activeLink === '/technology'}
+                title="Technology"
+              >
+                Technology
+              </S.MenuLink>
+            </Link>
+            <Link href="/about" passHref>
+              <S.MenuLink
+                id="menu-link-about"
+                isActive={activeLink === '/about'}
+                title="About"
+              >
+                About
+              </S.MenuLink>
+            </Link>
+            <Link href="/client" passHref>
+              <S.MenuLink
+                id="menu-link-client"
+                isActive={activeLink === '/client'}
+                title="Client"
+              >
+                Client
+              </S.MenuLink>
+            </Link>
+            <Link href="/partner" passHref>
+              <S.MenuLink
+                id="menu-link-partner"
+                isActive={activeLink === '/partner'}
+                title="Partner"
+              >
+                Partner
+              </S.MenuLink>
+            </Link>
           </S.MenuNav>
         </MediaMatch>
 
@@ -56,14 +107,60 @@ const Menu = () => {
         <CloseIcon aria-label="Close Menu" onClick={() => setIsOpen(false)} />
         <div>
           <S.MenuNav>
-            <Link href="/" passHref>
-              <S.MenuLink href="#">Services</S.MenuLink>
+            <Link href="/services" passHref>
+              <S.MenuLinkFull
+                id="menufull-link-services"
+                isActive={activeLink === '/services'}
+                title="Services"
+              >
+                Services
+              </S.MenuLinkFull>
             </Link>
-            <S.MenuLink href="#">Product</S.MenuLink>
-            <S.MenuLink href="#">Technology</S.MenuLink>
-            <S.MenuLink href="#">About</S.MenuLink>
-            <S.MenuLink href="#">Client</S.MenuLink>
-            <S.MenuLink href="#">Partner</S.MenuLink>
+            <Link href="/product" passHref>
+              <S.MenuLinkFull
+                id="menufull-link-product"
+                isActive={activeLink === '/product'}
+                title="Product"
+              >
+                Product
+              </S.MenuLinkFull>
+            </Link>
+            <Link href="/technology" passHref>
+              <S.MenuLinkFull
+                id="menufull-link-technology"
+                isActive={activeLink === '/technology'}
+                title="Technology"
+              >
+                Technology
+              </S.MenuLinkFull>
+            </Link>
+            <Link href="/about" passHref>
+              <S.MenuLinkFull
+                id="menufull-link-about"
+                isActive={activeLink === '/about'}
+                title="About"
+              >
+                About
+              </S.MenuLinkFull>
+            </Link>
+            <Link href="/client" passHref>
+              <S.MenuLinkFull
+                id="menufull-link-client"
+                isActive={activeLink === '/client'}
+                title="Client"
+              >
+                Client
+              </S.MenuLinkFull>
+            </Link>
+            <Link href="/partner" passHref>
+              <S.MenuLinkFull
+                id="menufull-link-partner"
+                isActive={activeLink === '/partner'}
+                title="Partner"
+              >
+                Partner
+              </S.MenuLinkFull>
+            </Link>
           </S.MenuNav>
 
           <S.MenuGroup id="mobile-menu-group">
