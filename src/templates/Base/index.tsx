@@ -1,3 +1,5 @@
+import { useRouter } from 'next/router'
+
 import Menu from 'components/Menu'
 import Footer from 'components/Footer'
 
@@ -7,16 +9,20 @@ export type BaseTemplateProps = {
   children: React.ReactNode
 }
 
-const Base = ({ children }: BaseTemplateProps) => (
-  <S.Wrapper>
-    <Menu />
+const Base = ({ children }: BaseTemplateProps) => {
+  const { asPath } = useRouter()
 
-    <S.Content>{children}</S.Content>
+  return (
+    <S.Wrapper>
+      <Menu activeLink={asPath} />
 
-    <S.SectionFooter>
-      <Footer />
-    </S.SectionFooter>
-  </S.Wrapper>
-)
+      <S.Content>{children}</S.Content>
+
+      <S.SectionFooter>
+        <Footer />
+      </S.SectionFooter>
+    </S.Wrapper>
+  )
+}
 
 export default Base
