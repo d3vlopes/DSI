@@ -1,4 +1,4 @@
-import styled, { css } from 'styled-components'
+import styled, { css, DefaultTheme } from 'styled-components'
 import media from 'styled-media-query'
 
 import { Container } from 'components/Container'
@@ -66,8 +66,22 @@ export const MenuNav = styled.div`
   `}
 `
 
-export const MenuLink = styled.a`
-  ${({ theme }) => css`
+const MenuLinkModifiers = {
+  default: (theme: DefaultTheme) => css`
+    font-weight: ${theme.font.weight.regular};
+  `,
+  active: (theme: DefaultTheme) => css`
+    font-weight: ${theme.font.weight.bold};
+  `,
+}
+
+type MenuLinkProps = {
+  isActive: boolean
+  isOpen?: boolean
+}
+
+export const MenuLink = styled.a<MenuLinkProps>`
+  ${({ theme, isActive }) => css`
     font-size: ${theme.font.sizes.xxsmall};
     color: ${theme.colors.grey};
     margin: 0 ${theme.spacings.huge} 0;
@@ -80,6 +94,9 @@ export const MenuLink = styled.a`
     ${media.greaterThan('large')`
       margin: 0 ${theme.spacings.xxlarge} 0;
     `}
+
+    ${!isActive && MenuLinkModifiers.default(theme)}
+    ${isActive && MenuLinkModifiers.active(theme)}
   `}
 `
 
@@ -130,5 +147,17 @@ export const MenuFull = styled.nav<MenuFullProps>`
       display: flex;
       justify-content: flex-start;
     }
+  `}
+`
+
+export const MenuLinkFull = styled.a<MenuLinkProps>`
+  ${({ theme, isActive }) => css`
+    font-size: ${theme.font.sizes.xxsmall};
+    color: ${theme.colors.grey};
+    margin: 0 ${theme.spacings.huge} 0;
+    text-decoration: none;
+
+    ${!isActive && MenuLinkModifiers.default(theme)}
+    ${isActive && MenuLinkModifiers.active(theme)}
   `}
 `
