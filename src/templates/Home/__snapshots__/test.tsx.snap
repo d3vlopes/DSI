@@ -81,6 +81,7 @@ exports[`<Home /> should render Home 1`] = `
   margin: 0 5rem 0;
   -webkit-text-decoration: none;
   text-decoration: none;
+  font-weight: 400;
 }
 
 .c16 {
@@ -148,51 +149,34 @@ exports[`<Home /> should render Home 1`] = `
   justify-content: flex-start;
 }
 
-.c30 {
-  color: #263238;
-}
-
-.c29 {
-  padding-top: 1.6rem;
+.c17 {
+  font-size: 1.8rem;
+  color: #1F2E35;
+  margin: 0 5rem 0;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  font-weight: 400;
 }
 
 .c31 {
-  margin: 0.6rem 0 3.2rem 0;
+  color: #263238;
 }
 
-.c31 > h4 {
-  font-weight: 500;
-  margin-bottom: 1rem;
-}
-
-.c31 > div {
-  max-width: 31.7rem;
-}
-
-.c31 > div > span {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  font-weight: 300;
-  line-height: 149.19%;
+.c30 {
+  padding-top: 1.6rem;
 }
 
 .c32 {
-  margin-bottom: 3.2rem;
+  margin: 0.6rem 0 3.2rem 0;
 }
 
-.c32 > h3 {
-  margin-bottom: 1rem;
-  font-size: 2.4rem;
+.c32 > h4 {
   font-weight: 500;
+  margin-bottom: 1rem;
 }
 
 .c32 > div {
-  max-width: 26.9rem;
+  max-width: 31.7rem;
 }
 
 .c32 > div > span {
@@ -208,6 +192,32 @@ exports[`<Home /> should render Home 1`] = `
 }
 
 .c33 {
+  margin-bottom: 3.2rem;
+}
+
+.c33 > h3 {
+  margin-bottom: 1rem;
+  font-size: 2.4rem;
+  font-weight: 500;
+}
+
+.c33 > div {
+  max-width: 26.9rem;
+}
+
+.c33 > div > span {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  font-weight: 300;
+  line-height: 149.19%;
+}
+
+.c34 {
   display: grid;
   grid-template-columns: repeat(3,1fr);
   gap: 1.6rem;
@@ -218,11 +228,11 @@ exports[`<Home /> should render Home 1`] = `
   margin-bottom: 3.2rem;
 }
 
-.c33 img {
+.c34 img {
   max-width: min(100%,8.9rem);
 }
 
-.c34 {
+.c35 {
   padding: 2.4rem 0;
   background-color: #EE4248;
   color: #FFFFFF;
@@ -244,19 +254,19 @@ exports[`<Home /> should render Home 1`] = `
   justify-content: space-between;
 }
 
-.c18 {
+.c19 {
   margin-top: 3.2rem;
   -webkit-flex: 1 0 auto;
   -ms-flex: 1 0 auto;
   flex: 1 0 auto;
 }
 
-.c28 {
+.c29 {
   margin-top: 2.9rem;
   padding-top: 3.5rem;
 }
 
-.c23 {
+.c24 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -284,11 +294,11 @@ exports[`<Home /> should render Home 1`] = `
   color: #FFFFFF;
 }
 
-.c23:hover {
+.c24:hover {
   background-color: #de3f45;
 }
 
-.c27 {
+.c28 {
   position: relative;
   font-size: 3.2rem;
   line-height: 133.7%;
@@ -296,11 +306,11 @@ exports[`<Home /> should render Home 1`] = `
   color: #1F2E35;
 }
 
-.c0 .c17 {
+.c0 .c18 {
   margin-top: 0;
 }
 
-.c19 .sc-hHftDr {
+.c20 .sc-dmlrTW {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -315,7 +325,7 @@ exports[`<Home /> should render Home 1`] = `
   padding: 5.4rem 1.6rem 4.7rem 1.6rem;
 }
 
-.c20 {
+.c21 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -329,7 +339,7 @@ exports[`<Home /> should render Home 1`] = `
   align-items: center;
 }
 
-.c20 > h2 {
+.c21 > h2 {
   font-size: 3.4rem;
   font-weight: 500;
   max-width: 37.3rem;
@@ -337,15 +347,15 @@ exports[`<Home /> should render Home 1`] = `
   margin: 3.2rem 0 1.6rem 0;
 }
 
-.c21 {
+.c22 {
   color: #1F2E35;
 }
 
-.c21 > span {
+.c22 > span {
   color: #EE4248;
 }
 
-.c22 {
+.c23 {
   font-size: 2.0rem;
   line-height: 144.7%;
   max-width: 38.3rem;
@@ -353,12 +363,12 @@ exports[`<Home /> should render Home 1`] = `
   margin-bottom: 1.6rem;
 }
 
-.c24 > img {
+.c25 > img {
   width: 100%;
   max-width: 52.6rem;
 }
 
-.c25 .sc-kfzAmx > div > h3 {
+.c26 .sc-fKFyDc > div > h1 {
   font-size: 3.2rem;
   font-weight: 500;
   line-height: 133.69%;
@@ -366,16 +376,16 @@ exports[`<Home /> should render Home 1`] = `
   text-align: center;
 }
 
-.c25 .sc-kfzAmx > div > h3 > span {
+.c26 .sc-fKFyDc > div > h1 > span {
   color: #EE4248;
 }
 
-.c25 .sc-kfzAmx > div > p > span {
+.c26 .sc-fKFyDc > div > p > span {
   color: #EE4248;
   font-weight: 500;
 }
 
-.c25 .sc-fKFyDc {
+.c26 .sc-bBXqnf {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -386,16 +396,16 @@ exports[`<Home /> should render Home 1`] = `
   align-items: center;
 }
 
-.c25 .sc-fKFyDc > img {
+.c26 .sc-bBXqnf > img {
   max-width: 34.9rem;
   height: auto;
 }
 
-.c26 {
+.c27 {
   margin: 3.6rem 0 calc(6.4rem - 2.9rem);
 }
 
-.c26 > h2 {
+.c27 > h2 {
   margin-bottom: 2.4rem;
   text-align: center;
 }
@@ -453,7 +463,7 @@ exports[`<Home /> should render Home 1`] = `
 }
 
 @media (min-width:768px) {
-  .c30 {
+  .c31 {
     display: grid;
     grid-template-columns: repeat(3,1fr);
     margin-bottom: 1rem;
@@ -461,13 +471,13 @@ exports[`<Home /> should render Home 1`] = `
 }
 
 @media (min-width:768px) {
-  .c31 {
+  .c32 {
     margin-top: 1rem;
   }
 }
 
 @media (min-width:768px) {
-  .c19 .sc-hHftDr {
+  .c20 .sc-dmlrTW {
     -webkit-flex-direction: initial;
     -ms-flex-direction: initial;
     flex-direction: initial;
@@ -475,13 +485,13 @@ exports[`<Home /> should render Home 1`] = `
 }
 
 @media (min-width:1440px) {
-  .c19 .sc-hHftDr {
+  .c20 .sc-dmlrTW {
     padding: 5.1rem 0 10rem 0;
   }
 }
 
 @media (min-width:768px) {
-  .c20 {
+  .c21 {
     -webkit-align-items: flex-start;
     -webkit-box-align: flex-start;
     -ms-flex-align: flex-start;
@@ -490,14 +500,14 @@ exports[`<Home /> should render Home 1`] = `
 }
 
 @media (min-width:768px) {
-  .c20 > h2 {
+  .c21 > h2 {
     text-align: initial;
     margin: 0 0 2.4rem 0;
   }
 }
 
 @media (min-width:768px) {
-  .c22 {
+  .c23 {
     text-align: initial;
     max-width: 42rem;
     margin-bottom: 2.4rem;
@@ -505,43 +515,43 @@ exports[`<Home /> should render Home 1`] = `
 }
 
 @media (min-width:1440px) {
-  .c22 {
+  .c23 {
     max-width: 52rem;
   }
 }
 
 @media (min-width:768px) {
-  .c24 > img {
+  .c25 > img {
     margin-left: 3.2rem;
   }
 }
 
 @media (min-width:1170px) {
-  .c24 > img {
+  .c25 > img {
     margin-left: 5.2rem;
   }
 }
 
 @media (min-width:768px) {
-  .c25 .sc-kfzAmx > div > h3 {
+  .c26 .sc-fKFyDc > div > h1 {
     text-align: initial;
   }
 }
 
 @media (min-width:1170px) {
-  .c25 .sc-kfzAmx > div > h3 {
+  .c26 .sc-fKFyDc > div > h1 {
     max-width: 45.4rem;
   }
 }
 
 @media (min-width:768px) {
-  .c25 .sc-fKFyDc > img {
+  .c26 .sc-bBXqnf > img {
     max-width: 45.3rem;
   }
 }
 
 @media (min-width:1170px) {
-  .c26 {
+  .c27 {
     margin: 9.6rem 0 calc(8.7rem - 2.9rem);
   }
 }
@@ -584,37 +594,49 @@ exports[`<Home /> should render Home 1`] = `
           >
             <a
               class="c11 c12"
-              href="/"
+              href="/services"
+              id="menu-link-services"
+              title="Services"
             >
               Services
             </a>
             <a
               class="c11 c12"
-              href="#"
+              href="/product"
+              id="menu-link-product"
+              title="Product"
             >
               Product
             </a>
             <a
               class="c11 c12"
-              href="#"
+              href="/technology"
+              id="menu-link-technology"
+              title="Technology"
             >
               Technology
             </a>
             <a
               class="c11 c12"
-              href="#"
+              href="/about"
+              id="menu-link-about"
+              title="About"
             >
               About
             </a>
             <a
               class="c11 c12"
-              href="#"
+              href="/client"
+              id="menu-link-client"
+              title="Client"
             >
               Client
             </a>
             <a
               class="c11 c12"
-              href="#"
+              href="/partner"
+              id="menu-link-partner"
+              title="Partner"
             >
               Partner
             </a>
@@ -722,38 +744,50 @@ exports[`<Home /> should render Home 1`] = `
             class="c9 c10"
           >
             <a
-              class="c11 c12"
-              href="/"
+              class="c17"
+              href="/services"
+              id="menufull-link-services"
+              title="Services"
             >
               Services
             </a>
             <a
-              class="c11 c12"
-              href="#"
+              class="c17"
+              href="/product"
+              id="menufull-link-product"
+              title="Product"
             >
               Product
             </a>
             <a
-              class="c11 c12"
-              href="#"
+              class="c17"
+              href="/technology"
+              id="menufull-link-technology"
+              title="Technology"
             >
               Technology
             </a>
             <a
-              class="c11 c12"
-              href="#"
+              class="c17"
+              href="/about"
+              id="menufull-link-about"
+              title="About"
             >
               About
             </a>
             <a
-              class="c11 c12"
-              href="#"
+              class="c17"
+              href="/client"
+              id="menufull-link-client"
+              title="Client"
             >
               Client
             </a>
             <a
-              class="c11 c12"
-              href="#"
+              class="c17"
+              href="/partner"
+              id="menufull-link-partner"
+              title="Partner"
             >
               Partner
             </a>
@@ -831,10 +865,10 @@ exports[`<Home /> should render Home 1`] = `
       </nav>
     </menu>
     <div
-      class="c17 c18"
+      class="c18 c19"
     >
       <section
-        class="c19"
+        class="c20"
       >
         <div
           class="c3 c4"
@@ -844,10 +878,10 @@ exports[`<Home /> should render Home 1`] = `
             id="hero"
           >
             <div
-              class="c20"
+              class="c21"
             >
               <h2
-                class="c21"
+                class="c22"
               >
                 Making the most of the ever-growing 
                 <br />
@@ -856,12 +890,12 @@ exports[`<Home /> should render Home 1`] = `
                 </span>
               </h2>
               <p
-                class="c22"
+                class="c23"
               >
                 Managed by a team of professional experts with extensive experience and impressive track records
               </p>
               <button
-                class="c23"
+                class="c24"
               >
                 <span>
                   Read More
@@ -869,7 +903,7 @@ exports[`<Home /> should render Home 1`] = `
               </button>
             </div>
             <div
-              class="c24"
+              class="c25"
             >
               <img
                 alt="A person next to various types of devices"
@@ -880,17 +914,17 @@ exports[`<Home /> should render Home 1`] = `
         </div>
       </section>
       <section
-        class="c25"
+        class="c26"
       >
         <div
           data-testid="Mock About"
         />
       </section>
       <section
-        class="c26"
+        class="c27"
       >
         <h2
-          class="c27"
+          class="c28"
           color="grey"
         >
           Product and Service
@@ -905,7 +939,7 @@ exports[`<Home /> should render Home 1`] = `
       </section>
     </div>
     <section
-      class="c28"
+      class="c29"
     >
       <footer
         class=""
@@ -915,14 +949,14 @@ exports[`<Home /> should render Home 1`] = `
         >
           <img
             alt="Letters DSI and words DWIDASA, SAMSARA, INDONESIA"
-            class="c29"
+            class="c30"
             src="/img/logo.png"
           />
           <div
-            class="c30"
+            class="c31"
           >
             <div
-              class="c31"
+              class="c32"
             >
               <h4>
                 PT Dwidasa Samsara Indonesia
@@ -937,7 +971,7 @@ exports[`<Home /> should render Home 1`] = `
               </div>
             </div>
             <div
-              class="c32"
+              class="c33"
             >
               <h3>
                 Contact
@@ -955,7 +989,7 @@ exports[`<Home /> should render Home 1`] = `
               </div>
             </div>
             <div
-              class="c33"
+              class="c34"
             >
               <img
                 alt="icon of Microsoft Silverlight"
@@ -991,7 +1025,7 @@ exports[`<Home /> should render Home 1`] = `
           </div>
         </div>
         <div
-          class="c34"
+          class="c35"
         >
           Copyright © 2021 - Dwidasa Samsara Indonesia
         </div>
@@ -999,4 +1033,4 @@ exports[`<Home /> should render Home 1`] = `
     </section>
   </div>
 </div>
-`;
+`
