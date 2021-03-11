@@ -21,10 +21,14 @@ const Menu = ({ activeLink }: MenuProps) => {
   return (
     <S.Wrapper>
       <Container>
-        <S.Logo
-          src="/img/logo.png"
-          alt="Letters DSI and words DWIDASA, SAMSARA, INDONESIA"
-        />
+        <Link href="/">
+          <a>
+            <S.Logo
+              src="/img/logo.png"
+              alt="Letters DSI and words DWIDASA, SAMSARA, INDONESIA"
+            />
+          </a>
+        </Link>
         <MediaMatch lessThan="medium">
           <S.IconWrapper onClick={() => setIsOpen(true)}>
             <S.MenuIcon src="/icon/menu-icon.svg" alt="Open Menu" />
