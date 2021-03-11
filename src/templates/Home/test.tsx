@@ -13,6 +13,10 @@ const props = {
   provides: mockProvides,
 }
 
+jest.mock('next/router', () => ({
+  useRouter: jest.fn(() => ({ asPath: '/services' })),
+}))
+
 jest.mock('components/Hero', () => {
   return {
     __esModule: true,

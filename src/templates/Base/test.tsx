@@ -3,6 +3,10 @@ import { renderWithTheme } from 'utils/test/helpers'
 
 import Base from '.'
 
+jest.mock('next/router', () => ({
+  useRouter: jest.fn(() => ({ asPath: '/services' })),
+}))
+
 jest.mock('components/Menu', () => {
   return {
     __esModule: true,
