@@ -66,4 +66,12 @@ describe('<Menu />', () => {
 
     expect(container.querySelector('#mobile-menu-group')).toBeInTheDocument()
   })
+
+  it('should render the menu with an active link defined ', () => {
+    const { container } = renderWithTheme(<Menu activeLink="/services" />)
+
+    expect(container.querySelector('#menu-link-services')).toHaveStyle({
+      'font-weight': '700',
+    })
+  })
 })
