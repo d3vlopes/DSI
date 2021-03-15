@@ -50,12 +50,10 @@ jest.mock('components/Provides', () => {
 
 describe('<Home />', () => {
   it('should render Home', () => {
-    const { container } = renderWithTheme(<Home {...props} />)
+    renderWithTheme(<Home {...props} />)
 
     expect(screen.getByTestId('Mock Hero')).toBeInTheDocument()
     expect(screen.getByTestId('Mock About')).toBeInTheDocument()
     expect(screen.getByTestId('Mock Provides')).toBeInTheDocument()
-
-    expect(container.firstChild).toMatchSnapshot()
   })
 })
