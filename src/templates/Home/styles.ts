@@ -1,17 +1,9 @@
 import styled, { css } from 'styled-components'
 import media from 'styled-media-query'
 
-import { Content } from 'templates/Base/styles'
-
 import * as HeroStyles from 'components/Hero/styles'
 import * as TextContentStyles from 'components/TextContent/styles'
 import * as ItemStyles from 'components/Item/styles'
-
-export const Wrapper = styled.div`
-  ${Content} {
-    margin-top: 0;
-  }
-`
 
 export const SectionHero = styled.section`
   ${HeroStyles.Wrapper} {

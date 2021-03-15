@@ -26,6 +26,7 @@ export enum Sizes {
   large = '3.4rem',
   xlarge = '3.6rem',
   xxlarge = '4.8rem',
+  xxxlarge = '6.4rem',
 }
 
 export enum Colors {
