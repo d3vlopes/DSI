@@ -1,13 +1,16 @@
 import styled, { css } from 'styled-components'
 import { HeadingProps } from '.'
 
-export const Wrapper = styled.h2<HeadingProps>`
+export const Wrapper = styled.div<HeadingProps>`
   ${({ theme, color }) => css`
-    position: relative;
-    font-size: ${theme.font.sizes.medium};
-    line-height: 133.7%;
-    font-weight: ${theme.font.weight.medium};
-    color: ${theme.colors[color!]};
+    > h1,
+    h2 {
+      position: relative;
+      font-size: ${theme.font.sizes.medium};
+      line-height: 133.7%;
+      font-weight: ${theme.font.weight.medium};
+      color: ${theme.colors[color!]};
+    }
   `}
 `
 

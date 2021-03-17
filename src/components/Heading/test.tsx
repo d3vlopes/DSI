@@ -21,6 +21,23 @@ describe('<Heading />', () => {
     })
   })
 
+  it('should Heading must be rendered with the h1 tag and with wavy', () => {
+    const { container } = renderWithTheme(
+      <Heading as="h1" wavy>
+        Children
+      </Heading>,
+    )
+
+    const h1 = container.querySelector('div > h1')
+
+    expect(h1).toBeInTheDocument()
+
+    const wavy = container.querySelector('#wavy')
+    expect(wavy).toHaveStyle({
+      background: `url('/img/line-red.png') bottom repeat-x`,
+    })
+  })
+
   it('should render the wavy in black color ', () => {
     const { container } = renderWithTheme(
       <Heading wavy wavyColor="littleBlack">
