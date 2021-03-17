@@ -37,6 +37,10 @@ export const HeroTitle = styled.h2`
 `
 
 export const SectionOurService = styled.section`
+  ${media.greaterThan('large')`
+    margin-left: -8rem;
+  `}
+
   ${({ theme }) => css`
     margin-bottom: ${theme.spacings.huge};
 

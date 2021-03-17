@@ -101,12 +101,31 @@ export const HeroImage = styled.div`
 `
 export const SectionAbout = styled.section`
   ${({ theme }) => css`
+    ${TextContentStyles.Wrapper} > div {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      ${media.greaterThan('medium')`
+        display: initial;
+    `}
+    }
+
     ${TextContentStyles.Wrapper} > div > h1 {
       font-size: ${theme.font.sizes.medium};
       font-weight: ${theme.font.weight.medium};
       line-height: 133.69%;
       color: ${theme.colors.black};
       text-align: center;
+      max-width: 36.4rem;
+    }
+
+    ${TextContentStyles.Wrapper} > div > p {
+      max-width: 35.8rem;
+
+      ${media.greaterThan('medium')`
+        max-width: 52rem;
+      `}
     }
 
     ${media.greaterThan('medium')`
