@@ -1,6 +1,8 @@
 import styled, { css } from 'styled-components'
 import media from 'styled-media-query'
 
+import * as HeadingStyles from 'components/Heading/styles'
+
 export const HeroContent = styled.div`
   display: flex;
   justify-content: center;
@@ -30,6 +32,16 @@ export const HeroTitle = styled.h2`
     > span {
       color: ${theme.colors.primary};
       font-weight: ${theme.font.weight.bold};
+    }
+  `}
+`
+
+export const SectionOurService = styled.section`
+  ${({ theme }) => css`
+    margin-bottom: ${theme.spacings.huge};
+
+    ${HeadingStyles.Wrapper} {
+      margin-bottom: 2.9rem;
     }
   `}
 `
