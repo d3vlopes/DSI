@@ -57,7 +57,7 @@ describe('<Item />', () => {
   it('should render the background in whiteF6', () => {
     const { container } = renderWithTheme(<Item color="whiteF6" />)
 
-    expect(container.firstChild).toHaveStyle({
+    expect(container.querySelector('#item-wrapper')).toHaveStyle({
       background: '#F6F6F6',
     })
   })
@@ -65,7 +65,7 @@ describe('<Item />', () => {
   it('should render the background in the primary color', () => {
     const { container } = renderWithTheme(<Item color="primary" />)
 
-    expect(container.firstChild).toHaveStyle({
+    expect(container.querySelector('#item-wrapper')).toHaveStyle({
       background: '#EE4248',
     })
   })
@@ -102,7 +102,7 @@ describe('<Item />', () => {
       />,
     )
 
-    expect(container.firstChild).toHaveStyleRule(
+    expect(container.querySelector('#item-wrapper')).toHaveStyleRule(
       'flex-direction',
       'row-reverse',
       {
@@ -130,7 +130,7 @@ describe('<Item />', () => {
       </Item>,
     )
 
-    expect(container.firstChild).toHaveStyle({
+    expect(container.querySelector('#item-wrapper')).toHaveStyle({
       'flex-direction': 'column-reverse',
     })
 
