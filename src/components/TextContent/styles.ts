@@ -6,7 +6,7 @@ export const Wrapper = styled.div`
     color: ${theme.colors.littleBlack};
 
     ${media.greaterThan('medium')`
-      padding: ${theme.spacings.medium};
+      padding: ${theme.spacings.xxsmall};
     `}
 
     h1,

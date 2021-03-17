@@ -10,7 +10,7 @@ export const Wrapper = styled.div<ItemProps>`
     display: flex;
     flex-direction: ${reverseMobile ? 'column-reverse' : 'column'};
     background: ${theme.colors[color!]};
-    padding: ${theme.spacings.medium};
+    /* padding: ${theme.spacings.xxsmall}; */
 
     > img {
       width: 100%;
@@ -41,8 +41,6 @@ export const Wrapper = styled.div<ItemProps>`
       > img {
         width: 50%;
         max-height: 54.9rem;
-        margin-left: ${reverse ? '8.4rem' : '0'};
-        margin-right: ${reverse ? '0' : '8.4rem'};
       }
 
 
@@ -63,6 +61,13 @@ export const Wrapper = styled.div<ItemProps>`
     ${media.greaterThan('large')`
       > img {
         width: auto;
+      }
+    `}
+
+    ${media.greaterThan('huge')`
+      > img {
+        margin-left: ${reverse ? '8.4rem' : '0'};
+        margin-right: ${reverse ? '0' : '8.4rem'};
       }
     `}
   `}

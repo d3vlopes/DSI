@@ -48,6 +48,7 @@ export const MenuGroup = styled.div`
 
     > div {
       margin-left: ${theme.spacings.medium};
+      margin-top: -0.5rem;
     }
   `}
 `
