@@ -50,7 +50,7 @@ describe('<Item />', () => {
     })
 
     expect(content).toHaveStyle({
-      'max-width': '35.8rem',
+      'max-width': '100%',
     })
   })
 

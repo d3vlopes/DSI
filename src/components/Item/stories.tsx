@@ -44,7 +44,7 @@ NoImage.args = {
 
 export const Reverse: Story<ItemProps> = (args) => (
   <div style={{ margin: '0 auto' }}>
-    <Item {...args} reverse />
+    <Item {...args} />
   </div>
 )
 
@@ -52,6 +52,7 @@ Reverse.args = {
   img: mock[2].img,
   title: mock[2].title,
   content: mock[2].content,
+  reverse: true,
 }
 
 export const WithChildren: Story<ItemProps> = (args) => (

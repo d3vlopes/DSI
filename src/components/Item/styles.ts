@@ -30,8 +30,8 @@ export const Wrapper = styled.div<ItemProps>`
     }
 
     p {
-      max-width: ${img ? '35.8rem' : '100%'};
       margin-top: ${theme.spacings.medium};
+      max-width: 100%;
     }
 
     ${media.greaterThan('medium')`
