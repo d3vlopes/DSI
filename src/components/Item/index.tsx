@@ -1,4 +1,6 @@
+import { Container } from 'components/Container'
 import TextContent from 'components/TextContent'
+
 import * as S from './styles'
 
 export type ItemProps = {
@@ -24,22 +26,24 @@ const Item = ({
   title,
   titleAs = 'h1',
 }: ItemProps) => (
-  <S.Wrapper
-    id="item-wrapper"
-    img={img}
-    reverse={reverse}
-    reverseMobile={reverseMobile}
-    color={color}
-  >
-    {!!img && <img src={img} alt={alt} />}
+  <Container>
+    <S.Wrapper
+      id="item-wrapper"
+      img={img}
+      reverse={reverse}
+      reverseMobile={reverseMobile}
+      color={color}
+    >
+      {!!img && <img src={img} alt={alt} />}
 
-    {!!content && <TextContent content={content!} title={title!} />}
-    {!!children && (
-      <TextContent titleAs={titleAs} content={content!} title={title!}>
-        {children}
-      </TextContent>
-    )}
-  </S.Wrapper>
+      {!!content && <TextContent content={content!} title={title!} />}
+      {!!children && (
+        <TextContent titleAs={titleAs} content={content!} title={title!}>
+          {children}
+        </TextContent>
+      )}
+    </S.Wrapper>
+  </Container>
 )
 
 export default Item
