@@ -14,9 +14,4 @@ export const Content = styled.div`
   `}
 `
 
-export const SectionFooter = styled.section`
-  ${({ theme }) => css`
-    margin-top: ${theme.spacings.large};
-    padding-top: ${theme.spacings.xxlarge};
-  `}
-`
+export const SectionFooter = styled.section``

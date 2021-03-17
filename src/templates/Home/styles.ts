@@ -156,7 +156,7 @@ export const SectionProvides = styled.section`
       margin: 9.6rem 0 calc(8.7rem - ${theme.spacings.large});
     `}
 
-    > h2 {
+    > div > h2 {
       margin-bottom: ${theme.spacings.medium};
       text-align: center;
     }
