@@ -5,6 +5,7 @@ import * as S from './styles'
 export type TextContentProps = {
   children?: React.ReactNode
   title?: string
+  titleAs?: 'h1' | 'h2'
   titleColor?: HeadingColor
   content?: string
   wavyColor?: HeadingWavyColor
@@ -13,13 +14,14 @@ export type TextContentProps = {
 const TextContent = ({
   children,
   title,
+  titleAs = 'h1',
   titleColor = 'grey',
   content,
   wavyColor = 'primary',
 }: TextContentProps) => (
   <S.Wrapper id="text-content">
     {!!title && (
-      <Heading color={titleColor} wavy wavyColor={wavyColor}>
+      <Heading as={titleAs} color={titleColor} wavy wavyColor={wavyColor}>
         {title}
       </Heading>
     )}

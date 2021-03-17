@@ -10,6 +10,7 @@ export type ItemProps = {
   reverseMobile?: boolean
   content?: string
   title?: string
+  titleAs?: 'h1' | 'h2'
 }
 
 const Item = ({
@@ -21,6 +22,7 @@ const Item = ({
   reverseMobile = false,
   content,
   title,
+  titleAs = 'h1',
 }: ItemProps) => (
   <S.Wrapper
     id="item-wrapper"
@@ -33,7 +35,7 @@ const Item = ({
 
     {!!content && <TextContent content={content!} title={title!} />}
     {!!children && (
-      <TextContent content={content!} title={title!}>
+      <TextContent titleAs={titleAs} content={content!} title={title!}>
         {children}
       </TextContent>
     )}
