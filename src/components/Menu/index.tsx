@@ -166,18 +166,6 @@ const Menu = ({ activeLink }: MenuProps) => {
               </S.MenuLinkFull>
             </Link>
           </S.MenuNav>
-
-          <S.MenuGroup id="mobile-menu-group">
-            <S.IconWrapper>
-              <HomeIcon aria-label="Go to home" />
-            </S.IconWrapper>
-            <S.IconWrapper>
-              <EmailIcon aria-label="Send message" />
-            </S.IconWrapper>
-            <S.IconWrapper>
-              <ShuffleIcon aria-label="Media" />
-            </S.IconWrapper>
-          </S.MenuGroup>
         </div>
       </S.MenuFull>
     </S.Wrapper>

@@ -58,13 +58,8 @@ describe('<Menu />', () => {
   it('should render the group menu icon ', () => {
     const { container } = renderWithTheme(<Menu />)
 
+    expect(container.querySelector('#menu-group')).toBeInTheDocument()
     expect(container.querySelectorAll('#menu-group-icon')).toHaveLength(3)
-
-    expect(container.querySelector('#menu-home-icon')).toBeInTheDocument()
-    expect(container.querySelector('#menu-email-icon')).toBeInTheDocument()
-    expect(container.querySelector('#menu-shuffle-icon')).toBeInTheDocument()
-
-    expect(container.querySelector('#mobile-menu-group')).toBeInTheDocument()
   })
 
   it('should render the menu with an active link defined ', () => {
