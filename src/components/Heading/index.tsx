@@ -1,4 +1,6 @@
 import React from 'react'
+import { useItem } from 'hooks/use-item'
+
 import * as S from './styles'
 
 export type HeadingColor = 'grey' | 'littleBlack' | 'white'
@@ -9,29 +11,31 @@ export type HeadingProps = {
   color?: HeadingColor
   wavy?: boolean
   wavyColor?: HeadingWavyColor
-  as?: React.ElementType
 }
 
 const Heading = ({
   children,
-  as = 'h2',
   color = 'grey',
   wavy = false,
   wavyColor = 'primary',
-}: HeadingProps) => (
-  <S.Wrapper color={color}>
-    {as === 'h1' ? (
-      <h1>
-        {children}
-        {!!wavy && <S.Wavy id="wavy" wavyColor={wavyColor}></S.Wavy>}
-      </h1>
-    ) : (
-      <h2>
-        {children}
-        {!!wavy && <S.Wavy id="wavy" wavyColor={wavyColor}></S.Wavy>}
-      </h2>
-    )}
-  </S.Wrapper>
-)
+}: HeadingProps) => {
+  const { as } = useItem()
+
+  return (
+    <S.Wrapper color={color}>
+      {as === 'h1' ? (
+        <h1>
+          {children}
+          {!!wavy && <S.Wavy id="wavy" wavyColor={wavyColor}></S.Wavy>}
+        </h1>
+      ) : (
+        <h2>
+          {children}
+          {!!wavy && <S.Wavy id="wavy" wavyColor={wavyColor}></S.Wavy>}
+        </h2>
+      )}
+    </S.Wrapper>
+  )
+}
 
 export default Heading
