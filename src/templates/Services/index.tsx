@@ -1,5 +1,7 @@
 import Base from 'templates/Base'
 
+import { ItemProvider } from 'hooks/use-item'
+
 import Hero from 'components/Hero'
 import Item, { ItemProps } from 'components/Item'
 import { HeroContent } from 'components/Hero/mock'
@@ -22,14 +24,15 @@ const Services = ({ hero, ourService }: ServicesTemplateProps) => (
     </Hero>
 
     <S.SectionOurService>
-      <Item
-        title={ourService.title}
-        titleAs="h1"
-        img={ourService.img}
-        alt={ourService.alt}
-        content={ourService.content}
-        reverse
-      />
+      <ItemProvider as="h1">
+        <Item
+          title={ourService.title}
+          img={ourService.img}
+          alt={ourService.alt}
+          content={ourService.content}
+          reverse
+        />
+      </ItemProvider>
     </S.SectionOurService>
   </Base>
 )
