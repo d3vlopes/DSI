@@ -5,7 +5,7 @@ export type ItemContextData = {
 }
 
 export const ItemDefaultValues = {
-  as: 'h1',
+  as: 'h2',
 }
 
 export const ItemContext = createContext<ItemContextData>(ItemDefaultValues)
