@@ -14,14 +14,13 @@ export type TextContentProps = {
 const TextContent = ({
   children,
   title,
-  titleAs = 'h1',
   titleColor = 'grey',
   content,
   wavyColor = 'primary',
 }: TextContentProps) => (
   <S.Wrapper id="text-content">
     {!!title && (
-      <Heading as={titleAs} color={titleColor} wavy wavyColor={wavyColor}>
+      <Heading color={titleColor} wavy wavyColor={wavyColor}>
         {title}
       </Heading>
     )}
