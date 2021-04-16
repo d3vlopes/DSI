@@ -1,11 +1,11 @@
-import { screen } from '@testing-library/react'
-import { renderWithTheme } from 'utils/test/helpers'
+import { render, screen } from 'utils/test-utils'
+import { ItemDefaultValues } from 'hooks/use-item'
 
 import Heading from '.'
 
 describe('<Heading />', () => {
   it('should render the Heading with the grey color by default', () => {
-    renderWithTheme(<Heading>Children</Heading>)
+    render(<Heading>Children</Heading>)
 
     expect(screen.getByRole('heading', { name: /children/i })).toHaveStyle({
       color: '#1F2E35',
@@ -13,7 +13,7 @@ describe('<Heading />', () => {
   })
 
   it('should render the wavy in red by default ', () => {
-    const { container } = renderWithTheme(<Heading wavy>Children</Heading>)
+    const { container } = render(<Heading wavy>Children</Heading>)
 
     const wavy = container.querySelector('#wavy')
     expect(wavy).toHaveStyle({
@@ -22,11 +22,14 @@ describe('<Heading />', () => {
   })
 
   it('should Heading must be rendered with the h1 tag and with wavy', () => {
-    const { container } = renderWithTheme(
-      <Heading as="h1" wavy>
-        Children
-      </Heading>,
-    )
+    const itemProviderProps = {
+      ...ItemDefaultValues,
+      as: 'h1',
+    }
+
+    const { container } = render(<Heading wavy>Children</Heading>, {
+      itemProviderProps,
+    })
 
     const h1 = container.querySelector('div > h1')
 
@@ -39,7 +42,7 @@ describe('<Heading />', () => {
   })
 
   it('should render the wavy in black color ', () => {
-    const { container } = renderWithTheme(
+    const { container } = render(
       <Heading wavy wavyColor="littleBlack">
         Children
       </Heading>,
