@@ -25,7 +25,7 @@ const Home = ({ hero, about, provides }: HomeTemplateProps) => (
             <S.HeroTitle>
               {hero.title.slice(0, 36)}
               <br />
-              <span>{hero.title.slice(36, 58)}</span>
+              <span>{hero.title.slice(36, 59)}</span>
             </S.HeroTitle>
             <S.HeroDescription>{hero.description}</S.HeroDescription>
             <Button>Read More</Button>
