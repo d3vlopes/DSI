@@ -136,6 +136,8 @@ export const MenuFull = styled.nav<MenuFullProps>`
       display: flex;
       flex-direction: column;
       margin: ${theme.spacings.xlarge} 0;
+      align-items: center;
+      gap: ${theme.spacings.small};
     }
 
     ${MenuLink} {
