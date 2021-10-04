@@ -5,11 +5,10 @@
 ## Sobre
 
 <h4 align="left">
-  Esse projeto eu peguei o design dele no Figma para praticar e tentar recriar as telas.
-  O link para o design vou deixar abaixo.
+  Projeto onde eu peguei um design na comunidade do Figma e recriei as telas com NextJS.
 </h4>
 
-<div align="center">
+<div align="left">
   <a href="https://dsi-blush.vercel.app/">Demostração</a>
 </div>
 
