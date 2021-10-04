@@ -2,15 +2,15 @@
   <img src=".github/logo.png" alt="DSI">
 </div>
 
-## DSI
+## Sobre
 
 <h4 align="center">
   Esse projeto eu peguei o design dele no Figma para praticar e tentar recriar as telas.
   O link para o design vou deixar abaixo.
 </h4>
 
-<div align="center">
-  <a href="https://letmeask-nlw-781b6.firebaseapp.com/">Demostração</a>
+<div align="left">
+  <a href="https://dsi-blush.vercel.app/">Demostração</a>
 </div>
 
 <br />
