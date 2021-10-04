@@ -4,12 +4,12 @@
 
 ## Sobre
 
-<h4 align="center">
+<h4 align="left">
   Esse projeto eu peguei o design dele no Figma para praticar e tentar recriar as telas.
   O link para o design vou deixar abaixo.
 </h4>
 
-<div align="left">
+<div align="center">
   <a href="https://dsi-blush.vercel.app/">Demostração</a>
 </div>
 
