@@ -106,9 +106,9 @@ export const SectionAbout = styled.section`
       flex-direction: column;
       align-items: center;
 
-      ${media.greaterThan('medium')`
+      ${media.greaterThan('large')`
         display: initial;
-    `}
+      `}
     }
 
     ${TextContentStyles.Wrapper} > div > h1 {

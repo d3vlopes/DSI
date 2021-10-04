@@ -10,12 +10,15 @@ export const Wrapper = styled.div<ItemProps>`
     display: flex;
     flex-direction: ${reverseMobile ? 'column-reverse' : 'column'};
     background: ${theme.colors[color!]};
-    /* padding: ${theme.spacings.xxsmall}; */
+    justify-content: center;
+    gap: 2.4rem;
 
     > img {
       width: 100%;
+      max-width: 54.9rem;
       margin-bottom: ${theme.spacings.large};
       margin-top: ${reverseMobile ? `${theme.spacings.xxlarge}` : '0'};
+      align-self: center;
     }
 
     ${HeadingStyle} {
@@ -34,9 +37,9 @@ export const Wrapper = styled.div<ItemProps>`
       max-width: 100%;
     }
 
-    ${media.greaterThan('medium')`
+    ${media.greaterThan('large')`
       flex-direction: ${reverse ? 'row-reverse' : 'row'};
-      justify-content: center;
+      gap: 8.2rem;
 
       > img {
         width: 50%;

@@ -46,7 +46,7 @@ describe('<Item />', () => {
 
     // Desktop
     expect(wrapper).toHaveStyleRule('flex-direction', 'row', {
-      media: '(min-width: 768px)',
+      media: '(min-width: 1170px)',
     })
 
     expect(content).toHaveStyle({
@@ -106,7 +106,7 @@ describe('<Item />', () => {
       'flex-direction',
       'row-reverse',
       {
-        media: '(min-width: 768px)',
+        media: '(min-width: 1170px)',
       },
     )
   })

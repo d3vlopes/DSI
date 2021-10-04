@@ -42,6 +42,10 @@ const GlobalStyles = createGlobalStyle`
     -moz-osx-font-smoothing: grayscale;
   }
 
+  #__next {
+    overflow-x: hidden;
+  }
+
   ${({ theme }) => css`
     html {
       font-size: 62.5%;
