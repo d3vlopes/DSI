@@ -2,20 +2,16 @@
   <img src=".github/logo.png" alt="DSI">
 </div>
 
-## Sobre
+![DSI preview](.github/preview.png)
 
-<h4 align="center">
-  Esse projeto eu peguei o design dele no Figma para praticar e tentar recriar as telas.
-  O link para o design vou deixar abaixo.
+## Sobre
+<h4 align="left">
+  Projeto onde eu peguei um design na comunidade do Figma e recriei as telas com NextJS.
 </h4>
 
 <div align="left">
   <a href="https://dsi-blush.vercel.app/">Demostração</a>
 </div>
-
-<br />
-
-![DSI preview](.github/preview.png)
 
 ## Tecnologias
 No projeto foram utilizados:
