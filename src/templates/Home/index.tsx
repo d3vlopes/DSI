@@ -40,16 +40,14 @@ const Home = ({ hero, about, provides }: HomeTemplateProps) => (
       </Container>
     </S.SectionHero>
 
-    <Container>
-      <S.SectionAbout>
-        <Item
-          img={about.img}
-          alt={about.alt}
-          content={about.content}
-          color="whiteF6"
-        />
-      </S.SectionAbout>
-    </Container>
+    <S.SectionAbout>
+      <Item
+        img={about.img}
+        alt={about.alt}
+        content={about.content}
+        color="whiteF6"
+      />
+    </S.SectionAbout>
 
     <S.SectionProvides>
       <Heading>Product and Service</Heading>

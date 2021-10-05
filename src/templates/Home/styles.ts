@@ -15,12 +15,10 @@ export const SectionHero = styled.section`
 
       ${media.greaterThan('medium')`
         flex-direction: initial;
-
       `}
 
       ${media.greaterThan('huge')`
         padding: 5.1rem 0 10rem 0;
-
       `}
     `}
   }
@@ -128,7 +126,7 @@ export const SectionAbout = styled.section`
       `}
     }
 
-    ${media.greaterThan('medium')`
+    ${media.greaterThan('large')`
       ${TextContentStyles.Wrapper} > div > h1 {
         text-align: initial;
       }
